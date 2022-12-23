@@ -23,6 +23,12 @@ jobs:
       - name: Format
         run: |
           npm run format
+      
+      - name: URL redirects
+        if: github.event_name == 'push'
+        run: |
+          Rscript -e 'pak::pkg_install("r-lib/urlchecker"); urlchecker::url_update()'
+          git add -u && git commit -m 'Update links (GitHub Actions)' || echo "No link changes to commit"
 
       - name: Build
         run: |
