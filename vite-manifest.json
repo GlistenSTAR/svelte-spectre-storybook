@@ -1501,29 +1501,29 @@
       "src/www/docs/layouts/toggle/+page.md"
     ]
   },
+  "src/www/docs/+layout.css": {
+    "file": "_app/immutable/assets/_layout-191393e7.css",
+    "src": "src/www/docs/+layout.css"
+  },
   "src/www/+layout.css": {
     "file": "_app/immutable/assets/_layout-5a978cc4.css",
     "src": "src/www/+layout.css"
-  },
-  "src/www/+page.css": {
-    "file": "_app/immutable/assets/_page-34759894.css",
-    "src": "src/www/+page.css"
   },
   "src/www/docs/components/toast/+page.css": {
     "file": "_app/immutable/assets/_page-0816f381.css",
     "src": "src/www/docs/components/toast/+page.css"
   },
-  "src/www/docs/components/periodictable/+page.css": {
-    "file": "_app/immutable/assets/_page-e2084339.css",
-    "src": "src/www/docs/components/periodictable/+page.css"
+  "src/www/+page.css": {
+    "file": "_app/immutable/assets/_page-34759894.css",
+    "src": "src/www/+page.css"
   },
   "knobs.css": {
     "file": "_app/immutable/assets/knobs-f05849e3.css",
     "src": "knobs.css"
   },
-  "src/www/docs/+layout.css": {
-    "file": "_app/immutable/assets/_layout-191393e7.css",
-    "src": "src/www/docs/+layout.css"
+  "src/www/docs/components/periodictable/+page.css": {
+    "file": "_app/immutable/assets/_page-e2084339.css",
+    "src": "src/www/docs/components/periodictable/+page.css"
   },
   "Spectre.css": {
     "file": "_app/immutable/assets/Spectre-90f3861a.css",
