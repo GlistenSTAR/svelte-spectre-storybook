@@ -8,15 +8,15 @@
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="../../_app/immutable/assets/_layout-1e7f5595.css" rel="stylesheet">
-		<link href="../../_app/immutable/assets/Spectre-e8fa4b26.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/_layout-5a978cc4.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Spectre-90f3861a.css" rel="stylesheet">
 		<link href="../../_app/immutable/assets/_layout-191393e7.css" rel="stylesheet">
-		<link rel="modulepreload" href="../../_app/immutable/start-643e2f81.js">
+		<link rel="modulepreload" href="../../_app/immutable/start-cdf3bb50.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/index-3764ed31.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/singletons-420d5dfd.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/index-de8aeca4.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/paths-6cd3a76e.js">
-		<link rel="modulepreload" href="../../_app/immutable/components/pages/_layout.svelte-d2a15174.js">
+		<link rel="modulepreload" href="../../_app/immutable/components/pages/_layout.svelte-62e9847d.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/stores-4e890dda.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/Accordion-edc638da.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/index-4d5523d7.js">
@@ -37,7 +37,8 @@
 		<link rel="modulepreload" href="../../_app/immutable/chunks/media-78de1f6d.js">
 		<link rel="modulepreload" href="../../_app/immutable/components/pages/docs/_layout.svelte-6e6f5bd3.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/Container-f75864b9.js">
-		<link rel="modulepreload" href="../../_app/immutable/components/pages/docs/layouts/tile/_page.md-9357edbc.js"><title>svelte-spectre@0.4.14: Tile</title><!-- HEAD_svelte-pjz1z9_START --><!-- HEAD_svelte-pjz1z9_END -->
+		<link rel="modulepreload" href="../../_app/immutable/components/pages/docs/layouts/tile/_page.md-2c2ad373.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Tile-fad87381.js"><title>svelte-spectre@0.4.15: Tile</title><!-- HEAD_svelte-pjz1z9_START --><!-- HEAD_svelte-pjz1z9_END -->
 	</head>
 
 	<body>
@@ -97,8 +98,31 @@
 		
 
 		<main class="px-3"><div class="container grid-md svelte-ha8buz"><h1>Tile</h1>
-<blockquote><p>🚧 Under construction
-Tiles are repeatable or embeddable information blocks.</p></blockquote>
+<p>Tiles are repeatable or embeddable information blocks.</p>
+<pre class="language-sv"><!-- HTML_TAG_START --><code class="language-sv"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">import</span> <span class="token punctuation">&#123;</span>Button<span class="token punctuation">,</span> Tile<span class="token punctuation">,</span> Icon<span class="token punctuation">,</span> Container<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'svelte-spectre'</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Container</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Tile</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>icon<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Icon</span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>emoji<span class="token punctuation">"</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2x<span class="token punctuation">"</span></span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>The Avengers<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>subtitle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation">=</span> <span class="token punctuation">"</span>action<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Join<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Button</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Tile</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Container</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<div class="container grid-md svelte-ha8buz"><div class="tile mt-6  tile-centered svelte-z7ik2c"><div class="tile-icon svelte-z7ik2c"><div slot="icon"><i class="icon icon-2x icon-emoji text-primary svelte-1wwpxa">
+</i></div></div>
+	<div class="tile-content svelte-z7ik2c"><div class="tile-title svelte-z7ik2c"><div slot="title">The Avengers</div></div>
+		<div class="tile-subtitle svelte-z7ik2c"><div slot="subtitle">Earth&#39;s Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</div></div>
+		</div>
+	<div class="tile-action svelte-z7ik2c"><div slot="action"><button class="btn btn-primary btn-md           svelte-1qo7wto">Join</button></div></div>
+</div>
+</div>
 </div></main>
 
 		
@@ -116,8 +140,8 @@ Tiles are repeatable or embeddable information blocks.</p></blockquote>
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="yaexos">
-			import { start } from "../../_app/immutable/start-643e2f81.js";
+		<script type="module" data-sveltekit-hydrate="1qcoo37">
+			import { start } from "../../_app/immutable/start-cdf3bb50.js";
 
 			start({
 				env: {},
@@ -131,8 +155,8 @@ Tiles are repeatable or embeddable information blocks.</p></blockquote>
 					form: null
 				},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="yaexos"]').parentNode,
-				version: "1671529203076"
+				target: document.querySelector('[data-sveltekit-hydrate="1qcoo37"]').parentNode,
+				version: "1671770973138"
 			});
 		</script>
 	</div>
